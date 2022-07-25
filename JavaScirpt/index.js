@@ -8,3 +8,4 @@ document.getElementsByClassName("login").onclick = function(){
     }
 }
 }
+window.addEventListener("load", init, false);
