@@ -1,0 +1,242 @@
+body{
+    background-color: #efb51f;
+    z-index: -1;
+}
+.all{
+    inset: 0px;
+}
+nav ul li:nth-child(1){
+    border-bottom: #fff 3px solid;
+}
+/* 頁首 */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0 15px;
+    width: 100%;
+    align-items: center;
+    background-color: #efb51f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+/* 商標 */
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.logo img{
+    width: 100%;
+}
+/* 主功能選單 */
+nav ul{
+    margin-left: 60px;
+    display: flex;
+    flex-grow: 1;
+    color: #fff;
+    font-weight: 600;
+    align-items: center;
+    font-size: 20px;
+}
+nav li{
+    padding: 8px 16px;
+}
+nav li:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+    background-color: #efb41f;
+    color: rgb(162, 162, 162);
+    border-bottom: 3px #fff solid;
+    cursor: pointer;
+}
+/* 設定 */
+.setting{
+    width: 40px;
+    height: 40px;
+}
+.setting img{
+    width: 100%;
+}
+/* 主體 */
+.section{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.column{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* 朋友清單 */
+.list-row{
+    position: relative;
+    width: 20%;
+    /* height: 100vh -50px; */
+    padding-top: 50px;
+}
+.list{
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+}
+/* 卡片內部 */
+.card{
+    display: flex;
+    padding: 15px;
+    border-bottom:1px #ccc solid ;
+}
+.card-pic{
+    border-radius: 50%;
+    /* height: 48px;
+    width: 48px; */
+    flex:0 0 48px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.card-pic img{
+    width: 100%;
+    height: 100%;
+}
+.card-text{
+
+}
+.name,.text{
+    padding: 5px;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    color: #827F7F;
+}
+/* 聊天室區塊 */
+.chatroom-row{
+    width: 80%;
+    position: fixed;
+    left: 20%;
+    top: 50px;
+}
+/* 名字 */
+.name-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:2px solid #ccc ;
+    box-shadow: 0 1px 1px #ccc;
+    min-height: 10%;
+}
+.name-column .name{
+    font-size: 30px;
+    padding: 15px;
+}
+/* 選單 */
+#options-switch{
+    display: none;
+}
+.options-block{
+    position: relative;
+    padding: 15px 30px;
+    
+}
+.options{
+    padding: 15px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+.options img{
+    height: 30px;
+}
+.options ul{
+    display: none;
+}
+.options li{
+    padding: 20px;
+    border: 2px solid #827F7F;
+    margin-bottom:20px ;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+.chatroom a:link,.chatroom a:visited,.chatroom a{
+    text-decoration: none;
+    color: #827F7F;
+}
+#options-switch:checked ~ .options ul{
+    display: block;
+}
+/* 對話 */
+.coversation{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    min-height: 70%;
+}
+.chat{
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.chat:nth-child(1),.chat:nth-child(3),.chat:nth-child(5),.chat:nth-child(7),.chat:nth-child(9),.chat:nth-child(11),.chat:nth-child(13),.chat:nth-child(15),.chat:nth-child(17){
+    align-self: flex-start;
+    background-color: #ccc;
+}
+
+.chat:nth-child(2),.chat:nth-child(4),.chat:nth-child(6),.chat:nth-child(8),.chat:nth-child(10),.chat:nth-child(12),.chat:nth-child(14),.chat:nth-child(16),.chat:nth-child(18){
+    align-self: flex-end;
+    background-color: #EFB51F;
+    color: #fff;
+}
+/* 輸入欄 */
+.send-box{
+    background-color: #efb51f;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    min-height: 15%;
+}
+.partner-box{
+    flex-grow: 1;
+}
+.partner{
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.partner img{
+    width: 100%;
+}
+.textarea{
+    padding: 0 15px;
+    width: 93%;
+    display: flex;
+    background: #F5D686;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+#text{
+    width: 94%;
+    height: 42px;
+    font-size: 30px;
+    resize: none;
+    background-color: #f5d686;
+    border: none;
+    outline: none;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+.text-pic{
+    width: 48px;
+    height: 48px;
+}
+.text-pic img{
+    width: 100%;
+}

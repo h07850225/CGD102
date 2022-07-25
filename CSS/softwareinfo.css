@@ -1,0 +1,136 @@
+/* 頁首 */
+/* .softinfo{
+    border-bottom: 3px #fff solid;
+} */
+/* .header-list li:hover ~ .softinfo{
+    border-bottom:none;
+} */
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #E57B19;
+    letter-spacing: 35px;
+    margin-bottom: 30px;
+}
+.header-list a:nth-child(2){
+    border-bottom: #fff 3px solid;
+}
+/* 中間 */
+.section{
+    margin-top: 50px;
+    width: 100%;
+    padding: 60px 0 50px;
+    position: relative;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(45deg, #ffffff 20%,#F5D686 100% );
+    opacity: .9;
+}
+.row{
+    max-width: 1200px;;
+    display: flex;
+    justify-content: center;
+}
+.column{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+/* 圖片 */
+.pic{
+    width: 50%;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+/* 介紹 */
+.info{
+    line-height: 1.7;
+}
+.info p{
+    margin: 20px 0;
+    text-align: left;
+}
+.info p:first-child{
+    font-size: 22px;
+    color:#693F0EC4;
+    text-align: center;
+}
+/* 主標 */
+h2{
+    font-size: 30px;
+    color:#BA2727E0;
+}
+.info p:nth-child(3){
+    font-size: 20px;
+    color:#4F483BE8;
+    margin-bottom: 40px;
+}
+.info p:nth-child(4){
+    font-size: 16px;
+    color:#adacace8;
+}
+/* 按鈕 */
+.switch{
+    display: flex;
+    width: 30%;
+    margin: auto;
+    justify-content: space-around;
+    padding: 30px;
+}
+.button{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+#b1{
+    background-color: #e8c55c;
+}
+/* 狗掌 */
+.dog-paw1{
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    /* z-index: -1; */
+    opacity: .15;
+    filter: grayscale(1);
+    transform: rotate(20deg);
+    width: 450px;
+    height: 450px;
+}
+.dog-paw1 img{
+    width: 100%;
+}
+.dog-paw2{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    /* z-index: -1; */
+    opacity: .15;
+    filter: grayscale(1);
+    transform: rotate(-20deg);
+    
+}
+.dog-paw2 img{
+    width: 100%;
+}
+.dog-paw3{
+    position: absolute;
+    bottom: -20%;
+    right: 40%;
+    /* z-index: -1; */
+    opacity: .15;
+    filter: grayscale(1);
+    width: 350px;
+    height: 350px;
+}
+.dog-paw3 img{
+    width: 100%;
+}
