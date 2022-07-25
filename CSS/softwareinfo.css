@@ -134,3 +134,8 @@ h2{
 .dog-paw3 img{
     width: 100%;
 }
+/* 頁尾 */
+.footer{
+    position: absolute;
+    bottom:0;
+}
