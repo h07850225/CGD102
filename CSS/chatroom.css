@@ -63,26 +63,33 @@ nav li:hover{
     width: 100%;
     height: 100%;
     background-color: #fff;
+    padding-top: 50px;
 }
 .column{
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 /* 朋友清單 */
 .list-row{
     position: relative;
     width: 20%;
-    /* height: 100vh -50px; */
-    padding-top: 50px;
 }
 .list{
-    height: 100%;
     background-color: #fff;
     overflow-x: hidden;
     /* position: fixed; */
+    overflow-y: scroll;
     top: 0;
     left: 0;
+    height: calc(100vh - 50px);
+}
+.list::-webkit-scrollbar{
+    width: 5px;
+}
+.list::-webkit-scrollbar-track{
+    background-color: #fff;
 }
 /* 卡片內部 */
 .card{
@@ -103,7 +110,7 @@ nav li:hover{
     height: 100%;
 }
 .card-text{
-
+    font-weight: 600;
 }
 .name,.text{
     padding: 5px;
@@ -118,7 +125,12 @@ nav li:hover{
     width: 80%;
     position: fixed;
     left: 20%;
-    top: 50px;
+    /* top: 50px; */
+}
+.chatroom{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* 名字 */
 .name-column{
@@ -127,7 +139,7 @@ nav li:hover{
     align-items: center;
     border-bottom:2px solid #ccc ;
     box-shadow: 0 1px 1px #ccc;
-    min-height: 10%;
+    height: 10vh;
 }
 .name-column .name{
     font-size: 30px;
@@ -140,7 +152,10 @@ nav li:hover{
 .options-block{
     position: relative;
     padding: 15px 30px;
-    
+}
+.options-block img:hover{
+cursor: pointer;
+transform: scale(1.1);
 }
 .options{
     padding: 15px;
@@ -171,23 +186,34 @@ nav li:hover{
     display: block;
 }
 /* 對話 */
+.chatroom-column{
+    flex-grow: 1;
+    /* height: 100%; */
+}
 .coversation{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    min-height: 70%;
+    height: calc(80vh - 50px);
+    overflow-y: scroll;
+}
+.coversation::-webkit-scrollbar{
+    width: 5px;
+}
+.coversation::-webkit-scrollbar-track{
+    background-color: #fff;
 }
 .chat{
     font-size: 16px;
     padding: 10px;
     border-radius: 10px;
 }
-.chat:nth-child(1),.chat:nth-child(3),.chat:nth-child(5),.chat:nth-child(7),.chat:nth-child(9),.chat:nth-child(11),.chat:nth-child(13),.chat:nth-child(15),.chat:nth-child(17){
+.chat:nth-child(odd){
     align-self: flex-start;
     background-color: #ccc;
 }
 
-.chat:nth-child(2),.chat:nth-child(4),.chat:nth-child(6),.chat:nth-child(8),.chat:nth-child(10),.chat:nth-child(12),.chat:nth-child(14),.chat:nth-child(16),.chat:nth-child(18){
+.chat:nth-child(even){
     align-self: flex-end;
     background-color: #EFB51F;
     color: #fff;
@@ -198,7 +224,7 @@ nav li:hover{
     display: flex;
     padding: 20px;
     align-items: center;
-    min-height: 15%;
+    height: 10vh;
 }
 .partner-box{
     flex-grow: 1;
@@ -209,6 +235,10 @@ nav li:hover{
     background-color: #fff;
     border-radius: 50%;
     overflow: hidden;
+}
+.partner:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 .partner img{
     width: 100%;
@@ -239,4 +269,8 @@ nav li:hover{
 }
 .text-pic img{
     width: 100%;
+}
+.text-pic img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
