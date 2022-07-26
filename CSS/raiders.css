@@ -70,7 +70,7 @@ h1{
 }
 .text h2{
     font-size: 30px;
-    color: #BA2727E0;
+    color: rgb(199, 152, 30);
     margin-bottom: 14px;
 }
 .text p{
@@ -78,7 +78,7 @@ h1{
 }
 .text p:nth-child(2){
     font-size: 25px;
-    color: #ccc;
+    color: #BA2727E0;
     margin-bottom: 14px;
 }
 .column a,.column a:visited, .column a:link{

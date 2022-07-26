@@ -62,19 +62,18 @@ h1{
     opacity: .8;
     box-sizing: border-box;
     position: relative;
+    min-height: 300px;
     
 }
 /* 商品卡片圖片 */
 .shop-card-pic{
-    width: 250px;
-    height: 250px;
+    width: 30%;
     background-color: #fff;
     opacity: 0.95;
 
 }
 .shop-card-pic img{
     width: 100%;
-    height: 100%;
 }
 /* 商品介紹 */
 .shop-card-text{
@@ -82,14 +81,17 @@ h1{
     text-align: left;
     align-self: flex-start;
     padding: 0 15px;
+    width: 70%;
 }
 .shop-card-text h3,.shop-card-text p,.shop-card-text .price{
     font-size: 20px;
     margin-bottom: 20px;
     color: #5e5c5c;
-    line-height: 25px;
+    line-height: 1.7;
     font-weight: 500;
     font-size: 20px;
+    text-indent: -3em;
+    padding-left:3em ;
 }
 /* 購買按鈕 */
 .shop-list-card button{
