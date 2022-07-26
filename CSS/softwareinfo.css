@@ -38,6 +38,7 @@ h1{
     width: 40%;
     display: flex;
     justify-content: center;
+    height: 80vh;
 }
 /* 圖片 */
 .pic{
@@ -123,7 +124,7 @@ h2{
 }
 .dog-paw3{
     position: absolute;
-    bottom: -20%;
+    bottom: 0%;
     right: 40%;
     /* z-index: -1; */
     opacity: .15;
@@ -135,7 +136,3 @@ h2{
     width: 100%;
 }
 /* 頁尾 */
-.footer{
-    position: absolute;
-    bottom:0;
-}
