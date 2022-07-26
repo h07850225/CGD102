@@ -49,12 +49,12 @@
     opacity: .7;
     animation-name:big;
     animation-iteration-count:infinite;
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 @keyframes big{
-    0%{scale(1);}
-    50%{scale(1.2);}
-    100%{scale(1);}
+    0%{transform:  scale(1);}
+    50%{transform: scale(1.1); }
+    100%{transform: scale(1); }
 }
 .first-sight-wrap .download:hover{
     transform: scale(1.1,1.1);
