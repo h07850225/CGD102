@@ -1,0 +1,1423 @@
+h1{
+    position: absolute;
+    top: -500px;
+    overflow: hidden;
+}
+.section h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #E57B19;
+    text-align: center;
+    padding: 20px 0;
+}
+.section h2 span{
+    padding: 20px;
+}
+/* 第一頁 */
+.first_sight .container{
+    overflow: hidden;
+}
+.first_sight.row{
+    display: flex;
+    align-items: center;
+}
+.first_sight.column{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first_sight_pic{
+    width: 100%;
+    padding: 20px;
+}
+.first_sight_pic img{
+    width: 100%;
+}
+.slogan_pic img{
+    width: 100%;
+}
+.first_sight.column:nth-child(2) .first_sight_pic{
+    display: none;
+}
+.first_sight button{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    width: 50%;
+    background-color: #efb51f;
+    border-radius: 60px;
+    margin: 10px;
+}
+.first_sight button a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 36px;
+    width: 100%;
+    border: none;
+}
+.register_login{
+    width: 100%;
+    display: flex;
+}
+.register_login button{
+    width: 45%;
+}
+.register_login button a{
+    font-size: 25px;
+    width: 100%;
+}
+/* 第一頁狗掌 */
+.first_sight_dog_paw1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(215deg);
+    overflow: hidden;
+}
+.first_sight_dog_paw1 img{
+    width: 100%;
+}
+.first_sight_dog_paw2{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(-200deg);
+    overflow: hidden;
+}
+.first_sight_dog_paw2 img{
+    width: 100%;
+}
+.first_sight_dog_paw3{
+    position: absolute;
+    bottom: -10%;
+    right: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(200deg);
+    overflow: hidden;
+}
+.first_sight_dog_paw3 img{
+    width: 100%;
+}
+/* 第一頁按鈕 */
+.download:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .3s;
+}
+.register_login button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* 第一頁下半 */
+.publicity_container{
+    width: 100%;
+    position: relative;
+}
+.publicity_row{
+    margin-top: 60px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+.publicity_column.text{
+    width: 60%;
+}
+.publicity_column.pic{
+    width: 40%;
+}
+.publicity_row .publicity_column.text h2{
+    font-size: 30px;
+    color: #AF0303D6;
+    margin-bottom: 20px ;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.25;
+    letter-spacing: 0px;
+}
+.publicity_column.text p{
+    font-size: 25px;
+    color: #827F7F;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.25;
+}
+.publicity_pic img{
+    width: 100%;
+}
+
+.publicity_dog_paw1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(-210deg);
+    overflow: hidden;
+}
+.publicity_dog_paw1 img{
+    width: 100%;
+}
+/* 三大主題 */
+.feature_container{
+    margin: auto;
+    position: relative;
+    margin: 0 -10px;
+}
+
+.feature_row{
+    display: flex;
+    padding: 30px 15px;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0 -10px;
+}
+.feature_column{
+    width: 33%;
+    padding: 10px;
+}
+.feature_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature_text{
+    display: flex;
+    flex-direction: column;
+    width: 93%;
+}
+.feature_text h3{
+    font-size: 30px;
+    color: #C7981E;
+    margin-bottom: 30px;
+}
+.feature_text p{
+    font-size: 25px;
+    color: #827F7F;
+    text-align: left;
+    line-height: 1.25;
+    font-weight: 500;
+    margin: auto;
+    background-color: rgba(255,255,255,.4);
+}
+.feature_pic img{
+    width: 100%;
+}
+/* 三大特色狗掌 */
+.feature_dog_paw{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    width: 50%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(183deg);
+    overflow: hidden;  
+}
+.feature_dog_paw img{
+    width: 100%;
+}
+.feature_bone{
+    position: absolute;
+    top: 80%;
+    left: -40%;
+    width: 100%;
+    filter:grayscale(1);
+    opacity: .07;
+    z-index: -1;
+}
+.feature_bone img{
+    width: 100%;
+}
+/* 軟體介紹 */
+.section.soft_info{
+    overflow: hidden;
+}
+.soft_info_container{
+    position: relative;
+}
+.soft_info_row{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 500px;
+    max-height:700px ;
+}
+.soft_info_container h2{
+    margin-bottom: 30px;
+}
+.soft_info_column{
+    position: relative;
+}
+.soft_info_column:nth-child(1),.soft_info_column:nth-child(4){
+    width: 5%;
+}
+.soft_info_column:nth-child(2){
+    width: 60%;
+
+}
+.soft_info_column:nth-child(3){
+    width: 30%;
+}
+.soft_info_button input{
+    background-color: #ffd966;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+}
+.soft_info_button input:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+.soft_info_wrap{
+    position: absolute;
+    top: 1%;
+    left: 21%;
+    width: 2000px;
+    display: flex;
+}
+.soft_demo_pic{
+    width: 60%;
+    max-width: 384px;
+}
+.soft_demo_pic img{
+    width: 100%;
+}
+.soft_cellphone_pic{
+    position: relative;
+    top: 0px;
+    left: 20%;
+    width: 61%;
+    max-width: 390px;
+}
+.soft_cellphone_pic img{
+    width: 100%;
+}
+.soft_up_dog_paw_pic{
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    z-index: -1;
+    transform: rotate(35deg);
+}
+.soft_up_dog_paw_pic img{
+    width: 100%;
+}
+.soft_down_dog_paw_pic{
+    position: absolute;
+    bottom: 0%;
+    right:0%;
+    z-index: 1;
+    transform: rotate(-35deg);
+    display: none;
+}
+.soft_down_dog_paw_pic img{
+    width: 100%;
+}
+.soft_info_card h3{
+    font-size: 30px;
+    color:#C7981E;
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-weight: 600;
+}
+.soft_info_card p{
+    font-size: 25px;
+    color: #827F7F;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+}
+.soft_info_card span{
+    margin-bottom: 10px;
+}
+.more{
+    position: absolute;
+    right:5%;
+    font-size: 20px;
+}
+.more:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* 軟體介紹狗掌 */
+.soft_info_dog_paw1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+    opacity: .2;
+    transform: rotate(160deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.soft_info_dog_paw1 img{
+    width: 100%;
+}
+.soft_info_dog_paw2{
+    position: absolute;
+    bottom: -5%;
+    right: 0%;
+    width: 30%;
+    opacity: .2;
+    transform: rotate(180deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.soft_info_dog_paw2 img{
+    width: 100%;
+}
+/* 交友攻略 */
+.raiders_container{
+    position: relative;
+}
+.raiders_row{
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.raiders_column{
+    width: 25%;
+    padding: 10px;
+}
+.raiders_text{
+    width: 60%;
+    font-size: 25px;
+}
+.raiders_pic{
+    width: 40%;
+}
+.raiders_text p{
+    color: #827F7F;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.raiders_pic img{
+    width: 100%;
+}
+.raiders_card{
+    padding: 10px;
+    height: 250px;
+    border-radius: 30px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.raiders_card:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.raiders_card h3{
+    color: #C7981E;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin: auto;
+    margin-bottom:10px ;
+    height: 50px;
+}
+.raiders_card p{
+    color: #827F7F;
+    font-size: 20px;
+    flex-grow: 1;
+    line-height: 1.25;
+}
+/* 撰寫者 */
+.writer{
+    display: flex;
+    align-items: center;
+}
+.writer_pic{
+    width: 50px;
+    height: 50px;
+    
+}
+.writer_pic img{
+    width: 100%;
+    border-radius: 50%;
+}
+.writer_name{
+    color: #888888;
+    line-height: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+}
+.writer_name_cellphone{
+    display: none;   
+}
+/* 交友攻略狗掌 */
+.raiders_dog_paw1{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30%;
+    opacity: .2;
+    transform: rotate(-200deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.raiders_dog_paw1 img{
+    width: 100%; 
+}
+.raiders_dog_paw2{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+    opacity: .2;
+    transform: rotate(180deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.raiders_dog_paw2 img{
+    width: 100%;
+}
+.raiders_dog_paw3{
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
+    width: 35%;
+    opacity: .2;
+    transform: rotate(-160deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.raiders_dog_paw3 img{
+    width: 100%;
+}
+/* 心理測驗 */
+.heart_test_container{
+    position: relative;
+}
+.heart_test_row{
+    display: flex;
+}
+.heart_test_pic{
+    width: 40%;
+}
+.heart_test_pic img{
+    width: 100%;
+}
+.heart_test_text{
+    width: 60%;
+    align-self: center;
+}
+.heart_test_text p{
+    font-size: 25px;
+    color: #827F7F;
+    line-height: 1.25;
+}
+.heart_test_text span{
+    display: block;
+    color: #ccc;
+    margin-top: 10px;
+}
+.more.test{
+    text-decoration: none;
+    color: #E8C55C;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* 心測狗掌 */
+.heart_test_dog_paw1{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 35%;
+    opacity: .2;
+    transform: rotate(160deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.heart_test_dog_paw1 img{
+    width: 100%;
+}
+.heart_test_dog_paw2{
+    position: absolute;
+    bottom: -15%;
+    right: 3%;
+    width: 35%;
+    opacity: .2;
+    transform: rotate(-160deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.heart_test_dog_paw2 img{
+    width: 100%;
+}
+/* 脫單見證 */
+.lost_single_container{
+    position: relative;
+}
+.lost_single_row{
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* 脫單卡片 */
+.lost_single_column{
+    width: 25%;
+    padding: 10px;
+}
+.lost_single_card{
+    height: 100%;    
+    border-radius: 30px;
+    height: 33  0px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;   
+    background-color: rgba(255,255,255,.7);
+}
+.lost_single_card:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* 脫單卡片圖片 */
+.lost_single_pic{
+    vertical-align: top;
+    /* margin-bottom:10px ; */
+    border-radius: 30px 30px  0 0;
+    overflow: hidden;
+}
+.lost_single_pic img{
+    width: 100%;
+}
+/* 脫單卡片文字 */
+.lost_single_text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    flex-grow: 1 ;
+}
+.lost_single_text h3{
+    color: #C7981E;
+    font-size: 25px;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.lost_single_text p{
+    color: #827F7F;
+    font-size: 20px;
+    line-height: 1.25;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.lost_single_card .writer_name{
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.lost_single_card .writer_name_cellphone{
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: none;
+}
+/* 脫單卡片狗掌&愛心 */
+.lost_single_dog_paw1{
+    position: absolute;
+    top: 0%;
+    left:  0%;
+    width: 35%;
+    opacity: .2;
+    transform: rotate(160deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.lost_single_dog_paw1 img{
+    width: 100%;
+}
+.lost_single_dog_paw2{
+    position: absolute;
+    top: 20%;
+    right:  5%;
+    width: 35%;
+    opacity: .2;
+    transform: rotate(-160deg);
+    filter: grayscale(1);
+    z-index: -1;
+}
+.lost_single_dog_paw2 img{
+    width: 100%;
+}
+.lost_single_heart{
+    position: absolute;
+    top: 20%;
+    left:  0%;
+    width: 35%;
+    opacity: .2;
+    transform: rotate(30deg);
+    z-index: -1;
+}
+.lost_single_dog_paw2 img{
+    width: 100%;
+}
+/* 夥伴商城 */
+.shop_container{
+    position: relative;
+}
+/* 夥伴商城介紹 */
+.shop_info_row{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+.shop_info_column{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.shop_info_column p{
+    font-size: 25px;
+    color: #827F7F;
+    line-height: 1.25;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+.shop_info_column span{
+    display: block;
+    padding-top:10px ;
+}
+.shop_info_column button{
+    background-color: #efb51f;
+    border: none;
+    border-radius: 60px;
+    align-self: flex-end;
+}
+.shop_info_column button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.shop_info_column button a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.shop_pic_column{
+    width: 40%;
+}
+.shop_pic img{
+    width: 100%;
+}
+/* 夥伴商城商品 */
+.shop_product_row{
+    max-width: 1200px;
+}
+.shop_product_column{
+    padding: 10px;
+}
+.product_card{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding:30px ;
+    background: linear-gradient(#FFD966C4,#FFD96692,#FFD96641);
+    opacity: .8;
+}
+.product_pic{
+    width: 30%;
+    background-color: #fff;
+}
+.product_pic img{
+    width: 100%;
+}
+.product_info{
+    width: 70%;
+    padding: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #827F7F;
+    line-height: 1.25;
+}
+.product_info h3{
+    margin-bottom: 10px;
+}
+.product_info p{
+    text-indent: -3em;
+    padding-left:3em ;
+}
+.product_info p span{
+    display: block;
+    text-indent: 0;
+    padding-left:0;
+}
+.product_info .price{
+    margin-top: 10px;
+}
+.shop_product_column button{
+    background: #efb51f;
+    color: #fff;
+    align-self: flex-end;
+    border: none;
+    border-radius: 60px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.shop_product_column button{
+    width: 100px;
+}
+.shop_product_column button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* 夥伴商城狗掌 */
+.shop_dog_paw1{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(215deg);
+    overflow: hidden;
+}
+.shop_dog_paw1 img{
+    width: 100%;
+}
+.shop_dog_paw2{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(-215deg);
+    overflow: hidden;
+}
+.shop_dog_paw2 img{
+    width: 100%;
+}
+.shop_dog_paw3{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    width: 30%;
+    opacity: 0.2;
+    filter:grayscale(1);
+    z-index: -1;
+    transform: rotate(215deg);
+    overflow: hidden;
+}
+.shop_dog_paw3 img{
+    width: 100%;
+}
+/* 桌機 */
+@media screen and (max-width:1199px) {
+    
+    
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+    /* 第一頁狗掌 */
+    .first_sight_dog_paw2{
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        width: 30%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(-200deg);
+        overflow: hidden;
+    }
+    .first_sight_dog_paw3{
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        width: 30%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(200deg);
+        overflow: hidden;
+    }
+    .publicity_dog_paw1{
+        display: none;
+    }
+    /* 三大特色 */
+    .feature_text h3{
+        font-size: 25px;
+        color: #C7981E;
+        text-align: left;
+    }
+    .feature_text p{
+        font-size: 20px;
+    }
+    /* 軟體介紹 */
+    .soft_info_wrap{
+        position: absolute;
+        top: 1%;
+        left: 21%;
+        width: 2000px;
+        display: flex;
+    }
+    .soft_demo_pic{
+        width: 60%;
+        max-width: 384px;
+        overflow: hidden;
+    }
+    .soft_demo_pic img{
+        width: 100%;
+    }
+    .soft_info_card h3{
+        font-size: 25px;
+    }
+    .soft_info_card p{
+        font-size: 20px;
+    }
+    .more{
+        font-size: 20px;
+    }
+    /* 軟體介紹狗掌 */
+    .soft_info_dog_paw1{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 30%;
+        opacity: .2;
+        transform: rotate(160deg);
+        filter: grayscale(1);
+        z-index: -1;
+    }
+    .soft_info_dog_paw2{
+        position: absolute;
+        bottom: -5%;
+        right: 0%;
+        width: 30%;
+        opacity: .2;
+        transform: rotate(180deg);
+        filter: grayscale(1);
+        z-index: -1;
+    }
+    /* 交友攻略*/
+    .raiders_text{
+        font-size: 20px;
+    }
+    .raiders_card{
+        height: 250px;
+    }
+    .raiders_card h3{
+        margin-bottom:10px ;
+    }
+    /* 撰寫者 */
+    .writer_pic{
+        width: 50px;
+        height: 50px;
+    }
+    .writer_pic img{
+        width: 100%;
+    }
+    .writer_name{
+        display: flex;
+        flex-direction: column;
+    }
+    /* 心測 */
+    .heart_test_text p{
+        font-size: 25px;
+    }
+    /* 脫單見證 */
+    .lost_single_card .writer_name_cellphone{
+        display: none;
+    }
+    .lost_single_card{
+        height: 280px;
+    }
+    .lost_single_text h3{
+        margin-bottom: 5px;
+    }
+    .lost_single_heart{
+        left: -20%;
+        bottom: -20%;
+    }
+    /* 脫單狗掌 */
+    .lost_single_dog_paw1{
+        display: none;
+    }
+    /* 夥伴商城 */
+    .shop_info_column p{
+        font-size: 25px;
+    }
+    /* 商城狗掌 */
+    .shop_dog_paw1{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 30%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw1 img{
+        width: 100%;
+    }
+    .shop_dog_paw2{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 50%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(-215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw2 img{
+        width: 100%;
+    }
+    .shop_dog_paw3{
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        width: 40%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw3 img{
+        width: 100%;
+    }
+}
+
+/* 手機以下 */
+@media screen and (max-width:767px){
+    .section h2{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    /* 第一頁 */
+    .first_sight .column:first-child{
+        display: none;
+    }
+    .first_sight .column{
+        margin: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .first_sight.column:nth-child(2) .first_sight_pic{
+        display: block;
+    }
+    .first_sight_pic{
+        width: auto;
+        padding: 0;
+    }
+    .first_sight img{
+        width: 100%;
+    }
+    /* 第一頁按鈕 */
+    .first_sight button{
+        background-color: #efb51f;
+        width: 70%;
+        border: none;
+        border-radius: 60px;
+        margin: 10px;
+    }
+    .first_sight button a{
+        color: #fff;
+        font-weight: 600;
+        font-size: 30px;
+        width: 100%;
+        border: none;
+        border-radius: 60px;
+    }
+    .register_login{
+        display: flex;
+        width: 100%;
+    }
+    .register_login button{
+        width: 100%;
+        padding: 0;
+    }
+    .register_login button a{
+        font-size: 21px;
+    }
+    /* 第一頁下半 */
+    .publicity_row{
+        display: block;
+    }
+    .publicity_column.text,.publicity_column.pic{
+        width: 100%;
+    }
+    .publicity_row .publicity_column.text h2{
+        font-size: 20px;
+        margin: 0;
+    }
+    .publicity_column.text p{
+        font-size: 16px;
+        color: #827F7F;
+        text-align: left;
+        font-weight: 500;
+        line-height: 1.25;
+    }
+    .publicity_pic{
+        width: 60%;
+        margin:10px 0 0 auto;
+    }
+    .publicity_pic img{
+        width: 100%;
+    }
+    /* 三大特色 */
+    
+    .feature_row{
+        flex-direction: column;
+        padding: 0%;
+    }
+    .feature_column{
+        width: 100%;
+        display: flex;
+    }
+    .feature_card{
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .feature_pic{
+        width: 40%;
+    }
+    .feature_pic img{
+        width: 100%;
+    }
+    .feature_text{
+        width: 60%;
+    }
+    .feature_text h3{
+        font-size: 20px;
+        margin-bottom: 5px;
+        color: #C7981E;
+        font-weight: 600;
+    }
+    .feature_text p{
+        font-size: 16px;
+        color: #827F7F;
+        line-height: 1.25;
+        font-weight: 500;
+    }
+    /* 軟體介紹 */
+    .soft_info_row{
+        min-height: 300px;
+    }
+    .soft_info_column:nth-child(2){
+        width: 55%;
+        margin: 5px;
+    }
+    .soft_info_column:nth-child(3){
+        width: 35%;
+        position: relative;
+    }
+    .soft_info_button input{
+        font-size: 16px;
+    }
+    .soft_demo_pic{
+        position: absolute;
+        max-width: 230px;
+        left: 20.5%;
+    }
+    .soft_demo_pic img{
+        width: 100%;
+    }
+    .soft_cellphone_pic{
+        position: relative;
+        top: 0;
+        left: 20%;
+    }
+    .soft_cellphone_pic img{
+        width: 100%;
+    }
+    .soft_up_dog_paw_pic{
+        position: absolute;
+        bottom: -10%;
+        left: -5%;
+        width: 61%;
+        z-index: -1;
+        transform: rotate(35deg);
+    }
+    .soft_up_dog_paw_pic img{
+        width: 100%;
+    }
+    .soft_down_dog_paw_pic{
+        position: absolute;
+        bottom: -10%;
+        right:  0%;
+        width: 61%;
+        z-index: 1;
+        transform: rotate(-35deg);
+        /* display: none; */
+    }
+    .soft_down_dog_paw_pic img{
+        width: 100%;
+    }
+    .soft_info_card h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .soft_info_card p{
+        font-size: 14px;
+    }
+    .more{
+        font-size: 10px;
+        color: #efb51f;
+    }
+    /* 交友攻略 */
+    .raiders_text p{
+        font-size: 16px;
+    }
+    .raiders_card h3{
+        color: #C7981E;
+        font-size: 16px;
+        font-weight: 600;
+        height: 34px;
+        /* margin: auto; */
+        padding: 10px 0 0 0 ;
+        text-align: left;
+    }
+    .raiders_card p{
+        color: #827F7F;
+        font-size: 14px;
+        padding: 10px 0 0 0 ;
+        overflow: hidden;
+    }
+    .raiders_column{
+        width: 50%;
+        padding: 10px;
+    }
+    .raiders_card{
+        height: 190px;
+        padding: 10px;
+    }
+    /* 撰寫者 */
+    .writer_pic{
+        display: none;
+    }
+    .writer_name{
+        display: none;
+    }
+    .writer_name_cellphone{
+        color: #888888;
+        font-size: 12px;
+        text-align: left;
+        line-height: 1.25;
+        display: block;
+        /* padding:  5px 15px; */
+    }
+    .writer_name_cellphone span{
+        display: block;
+    }
+    .heart_test_text p{
+        font-size: 16px;
+    }
+    /* 脫單見證 */
+    .lost_single_column{
+        width: 50%;
+    }
+    .lost_single_card{
+        height: 200px;
+    }
+    .lost_single_pic{
+        height: 30%;
+    }
+    .lost_single_text h3{
+        color: #C7981E;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .lost_single_text p{
+        padding: 10px 0 0 0;
+        color: #827F7F;
+        font-size: 14px;
+        line-height: 1.25;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .lost_single_card .writer_name_cellphone{
+        height: 30%;
+    }
+    /* 脫單狗掌&愛心 */
+    .lost_single_dog_paw1{
+        position: absolute;
+        top: 0%;
+        left:  0%;
+        width: 35%;
+        opacity: .2;
+        transform: rotate(160deg);
+        filter: grayscale(1);
+        z-index: -1;
+    }
+    .lost_single_dog_paw2{
+        position: absolute;
+        top: 20%;
+        right:  3%;
+        width: 35%;
+        opacity: .2;
+        transform: rotate(-160deg);
+        filter: grayscale(1);
+        z-index: -1;
+    }
+    .lost_single_heart{
+        display: none   ;
+    }
+    /* 夥伴商城 */
+    .shop_info_column p{
+        font-size: 16px;
+        color: #827F7F;
+        line-height: 1.25;
+        flex-grow: 1;
+        margin-bottom: 15px;
+    }
+    .shop_info_column button a{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .shop_pic_column{
+        margin: auto;
+    }
+    /* 夥伴商城卡片 */
+    .product_card{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px ;
+        background: linear-gradient(#FFD966C4,#FFD96692,#FFD96641);
+    }
+    .product_pic{
+        width: 80%;
+        max-width: 400px;
+    }
+    .product_pic img{
+        width: 100%;
+    }
+    .product_info{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #827F7F;
+        line-height: 1.25;
+    }
+    .product_info h3{
+        margin-bottom: 10px;
+    }
+    .product_info p{
+        text-indent: -3em;
+        padding-left:3em ;
+    }
+    .product_info p span{
+        display: block;
+        text-indent: 0;
+        padding-left:0;
+    }
+    .product_info .price{
+        margin-top: 10px;
+    }
+    .shop_product_column button{
+        font-size: 20px;
+    }
+    .shop_dog_paw1{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 30%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw1 img{
+        width: 100%;
+    }
+    .shop_dog_paw2{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 50%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(-215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw2 img{
+        width: 100%;
+    }
+    .shop_dog_paw3{
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        width: 40%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw3 img{
+        width: 100%;
+    }
+}

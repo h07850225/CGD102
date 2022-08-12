@@ -1,0 +1,534 @@
+/* 基礎設定 */
+*{
+    box-sizing: border-box;
+}
+main{
+    overflow: hidden;
+}
+a{
+    display: block;
+}
+/* 頁首 */
+.main_header{
+    width: 100%;
+    height: 50px;
+    background-color: #efb51f;
+    display: flex;
+    padding: 0 20px 0 0;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#menu_switch{
+    display: none;
+}
+.logo{
+    display: block;
+    height:50px
+}
+.logo img{
+    height: 100%;
+}
+.main_nav{
+    flex-grow: 1;
+}
+.main_nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main_nav a{
+    align-self: center;
+}
+.main_nav li{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.main_nav li:hover{
+    cursor: pointer;
+    transition: .3s;
+    background-color: #efb41f;
+    border-bottom: 3px #fff solid;
+}
+.main_nav .login{
+    display: none;
+    border-radius: 0;
+}
+.main_nav .login:hover{
+    transform: none;
+    background-color: none;
+}
+.login_wrapper{
+    display: flex;
+    align-items: center;
+}
+.name{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding-right:20px ;
+}
+.login{
+    padding: 5px 10px;
+    color: #fff;
+    background-color:#FFD966 ;
+    border-radius: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+}
+.login:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+    background-color: #f5cf6f;
+    cursor: pointer;
+}
+.section{
+    max-width: 1200px;
+    padding: 25px 25px;
+    position: relative;
+    /* overflow: hidden; */
+    margin: auto;
+}
+/* 滾動 */
+
+.roll_in{
+    opacity: 0;
+	transition: all .5s;
+}
+.right_pic.roll_in{
+    transform: translateX(30%) scale(0.95);
+}
+.left_pic.roll_in{
+    transform: translateX(30%) scale(0.95);
+}
+.roll_in.active{
+    opacity: 1;
+	transform: translateX(0%) scale(1);
+}
+/* 登入頁面 */
+.login_section{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(66,66,66,.8);
+    z-index: 10;
+}
+.login_column{
+    width: 60%;
+    height: 80%;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    padding: 30px ;
+}
+.cancel{
+    text-align: right;
+}
+.cancel button{
+    background-color: #efb51f;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+}
+.cancel button:hover{
+    cursor: pointer;
+}
+.login_block,.register_block{
+    text-align: center;
+    padding: 0 50px;
+}
+.login_by{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 50px;
+    box-shadow: 0 4px 4px  #ccc;
+    background-color: #efb51f;
+    padding: 5px;
+    border-radius: 30px;
+    position: relative;
+}
+.login_by_pic{
+    width: 30%;
+}
+.login_by_pic img{
+    width: 50px;
+}
+.login_by p{
+    width: 70px;
+    flex-grow: 1;
+    text-align: left;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.login_by{
+    text-decoration: none;
+    color: #fff;
+}
+.login_now{
+    color: #9c9c9ce8;
+}
+.login_now span{
+    border-bottom: 2px solid #9c9c9c85;
+}
+.register_block p{
+    width: 70%;
+    text-align: left;
+}
+.login_by:hover,.login_now span:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+a{
+    color: #efb51f;
+    text-decoration: none;
+}
+/* 施工中 */
+.construction_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color:rgba(66,66,66,.8);
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.construction_row{
+    margin:auto;
+    width: 80%;
+    height: 55%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.construction_cancel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #efb41f;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+}
+.construction_cancel:hover{
+    cursor: pointer;
+}
+.construction{
+    display: flex;
+    align-items: center;
+}
+.construction_pic{
+    width: 40%;
+}
+.construction_pic img{
+    width: 100%;
+}
+.construction p{
+    width: 50%;
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
+}
+
+/* 頁尾 */
+.footer{
+    width: 100%;
+    background-color: #efb51f;
+    padding: 16px 16px;
+    color: #fff;
+    font-size: 16px;
+}
+.footer img,.footer a ,.footer button{
+    background-color: #efb51f;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+.footer_column ul a:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+}
+.footer_column{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+.download_from_store,.community{
+    padding:10px 60px;
+}
+.download_from_store{
+    display: flex;
+}
+.download_from_store button{
+    max-width: 150px;
+    border: none;
+}
+.community{
+    padding: 0;
+}
+.community button{
+    width: 40px;
+    height: 40px;
+    margin:0 15px;
+    border: none;
+}
+
+.community img,.download_from_store img{
+    width: 100%;
+}
+.community img:hover,.download_from_store img:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer_column:last-child{
+    display: block;
+}
+.footer_column p{
+    font-weight: 600;
+}
+.footer_column ul{
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.footer_column li{
+    padding:10px;
+}
+.footer .for_cellphone{
+    display: none;
+}
+
+/* 桌機 */
+@media screen and (max-width:1199px) {
+
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+    .menu_button{
+        display: none;
+    }
+    .main_nav li{
+        font-size: 18px;
+    }
+    .login_column{
+        width: 70%;
+    }
+    .login_by{
+        margin: 30px 0 50px;
+        padding: 5px;
+        border-radius: 30px;
+        
+    }
+    .login_by p{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:767px){
+    /* 選單按鈕 */
+    .menu_button{
+        background-color: #efb51f;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 5;
+    }
+    .menu_button:hover{
+        cursor: pointer;
+    }
+    .menu_button span{
+        width: 36px;
+        height: 2px;
+        background-color: #fff;
+        position: relative;
+    }
+    .menu_button span:nth-child(1){
+        top: 12px;
+        transition: transform .5s 0s,top .5s .5s;
+        transform: rotate(0deg);
+    }
+    .menu_button span:nth-child(2){
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 1;
+        transition: .3s .8s;
+    }
+    .menu_button span:nth-child(3){
+        bottom: 12px;
+        transition: transform .5s 0s,bottom .5s .5s;
+        transform: rotate(0deg);
+    }
+
+    #menu_switch:checked ~  .menu_button span:nth-child(2){
+        opacity: 0;
+        transition: .3s;
+    }
+    
+    #menu_switch:checked ~  .menu_button span:nth-child(1){
+        transition: top .5s .3s , transform .5s .8s;
+        top:24px;
+        transform: rotate(405deg);
+    }
+    #menu_switch:checked ~  .menu_button span:nth-child(3){
+        transition: bottom .5s .3s, transform .5s .8s;
+        bottom: 24px;
+        transform: rotate(-405deg);
+    }
+    /* 選單 */
+    .main_nav{
+        display: none;
+        position: fixed;
+        width: 40%;
+        top: 50px;
+        right: 0;
+        background-color: #efb51f;
+        z-index: 10;
+    }
+    .main_nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_nav li{
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .main_nav a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        width: 100%;
+    }
+    .main_nav a + a{
+        border-top: 1px #fff solid;
+    }
+    #menu_switch:checked ~ .main_nav{
+        display: block;
+    }
+    .main_nav input{
+        background-color: #efb51f;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        padding: 20px;
+        border-top: 1px #fff solid;
+    }
+    .main_nav li:hover,.main_nav button:hover{
+        color: rgb(236, 13, 13);
+        cursor: pointer;
+        transition: .3s;
+        background-color:none;
+        border-bottom: none;
+    }
+    .main_nav .login{
+        display: block;
+    }
+    .login{
+        display: none;
+    }
+    /* 登入頁面 */
+    .login_column{
+        width: 80%;
+        height: 80%;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .login_block,.register_block{
+        text-align: center;
+        padding: 0 20px;
+    }
+    .login_by{
+        border-radius: 30px;
+    }
+    .login_by_pic img{
+        width: 30px;
+    }
+    .login_by p{
+        font-size: 15px;
+        text-align: left;
+    }
+    .login_now{
+        color: rgb(58, 58, 58);
+    }
+    .footer_column{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .download_from_store,.community{
+        width: 50%;
+        padding: 0;
+    }
+    .download_from_store{
+        display: block;
+    }
+    .download_from_store a{
+        display: block;
+        text-align: center;
+    }
+    .download_from_store button{
+        width: 100%;
+    }
+    .download_from_store img{
+        width: 100%;
+    }
+    .community{
+        display: flex;
+        justify-content: space-around;
+    }
+    .community button{
+        margin: 0;
+    }
+    .footer_column p{
+        display: none;
+    }
+    .footer_column ul{
+        padding: 0;
+    }
+    .footer_column li{
+        padding: 10px 5px;
+        font-size: 14px;
+    }
+    .footer_column:last-child{
+        display: block;
+    }
+    .footer_column p.for_cellphone{
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
