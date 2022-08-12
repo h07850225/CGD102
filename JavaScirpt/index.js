@@ -25,8 +25,52 @@
 window.addEventListener('scroll',function(){
     console.log(document.documentElement.scrollTop)
     let width = window.innerWidth;
-    if(width <= 767 )
-        if(document.documentElement.scrollTop>200){
+    if(width <= 767 ){
+        if(document.documentElement.scrollTop>100){
+            document.querySelector('.publicity_pic').classList.add('active')
+        }else{
+            document.querySelector('.publicity_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>1400){
+            document.querySelector('.raiders_pic').classList.add('active')
+        }else{
+            document.querySelector('.raiders_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>2000){
+            document.querySelector('.heart_test_pic').classList.add('active')
+        }else{
+            document.querySelector('.heart_test_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>3000){
+            document.querySelector('.shop_pic').classList.add('active')
+        }else{
+            document.querySelector('.shop_pic').classList.remove('active')
+        }
+    }
+    else if(width >=768 && width < 1023){
+        if(document.documentElement.scrollTop>100){
+            document.querySelector('.publicity_pic').classList.add('active')
+        }else{
+            document.querySelector('.publicity_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>1600){
+            document.querySelector('.raiders_pic').classList.add('active')
+        }else{
+            document.querySelector('.raiders_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>2400){
+            document.querySelector('.heart_test_pic').classList.add('active')
+        }else{
+            document.querySelector('.heart_test_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>3300){
+            document.querySelector('.shop_pic').classList.add('active')
+        }else{
+            document.querySelector('.shop_pic').classList.remove('active')
+        }
+    }
+    else{
+        if(document.documentElement.scrollTop>300){
             document.querySelector('.publicity_pic').classList.add('active')
         }else{
             document.querySelector('.publicity_pic').classList.remove('active')
@@ -36,7 +80,17 @@ window.addEventListener('scroll',function(){
         }else{
             document.querySelector('.raiders_pic').classList.remove('active')
         }
-
+        if(document.documentElement.scrollTop>3200){
+            document.querySelector('.heart_test_pic').classList.add('active')
+        }else{
+            document.querySelector('.heart_test_pic').classList.remove('active')
+        }
+        if(document.documentElement.scrollTop>4200){
+            document.querySelector('.shop_pic').classList.add('active')
+        }else{
+            document.querySelector('.shop_pic').classList.remove('active')
+        }
+    }
 
 
 })
