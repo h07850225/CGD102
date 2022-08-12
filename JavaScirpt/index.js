@@ -31,17 +31,17 @@ window.addEventListener('scroll',function(){
         }else{
             document.querySelector('.publicity_pic').classList.remove('active')
         }
-        if(document.documentElement.scrollTop>1400){
+        if(document.documentElement.scrollTop>1500){
             document.querySelector('.raiders_pic').classList.add('active')
         }else{
             document.querySelector('.raiders_pic').classList.remove('active')
         }
-        if(document.documentElement.scrollTop>2000){
+        if(document.documentElement.scrollTop>2350){
             document.querySelector('.heart_test_pic').classList.add('active')
         }else{
             document.querySelector('.heart_test_pic').classList.remove('active')
         }
-        if(document.documentElement.scrollTop>3000){
+        if(document.documentElement.scrollTop>3350){
             document.querySelector('.shop_pic').classList.add('active')
         }else{
             document.querySelector('.shop_pic').classList.remove('active')
