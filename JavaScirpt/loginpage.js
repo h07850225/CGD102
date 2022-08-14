@@ -23,6 +23,20 @@ function cancelConstruction(){
     document.querySelector('.construction_section').style.display ='none'
 }
 
+//檢查帳密
+function checkForm(){
+    let id = document.querySelector('#id').value;
+    let password = document.querySelector('#password').value;
+    console.log(id)
+    console.log(password)
+    if(id !='abcd' || password != '1234'){
+        window.alert("帳號或密碼錯誤");
+        id.select();
+        return
+    }
+    form.submit();
+}
+
 
 
 function init(){
@@ -47,6 +61,8 @@ function init(){
     for(let i = 0 ; i < lost_single_card; i++){
         document.querySelectorAll(`.lost_single_card`)[i].addEventListener('click',showConstruction,false);
     }
+    document.querySelector(`.column button`).addEventListener('click',showConstruction,false)
+
     let community = document.querySelectorAll('.community button').length;
     for(let i = 0 ; i < community; i++){
         document.querySelectorAll(`.community button`)[i].addEventListener('click',showConstruction,false);
@@ -59,12 +75,15 @@ function init(){
     for(let i = 0 ; i < footer_column; i++){
         document.querySelectorAll(`.footer_column li`)[i].addEventListener('click',showConstruction,false);
     }
-    
-    document.querySelector('.register').addEventListener('click',showConstruction,false);
-    document.querySelector('.download').addEventListener('click',showConstruction,false);
-    
 
     // 離開施工畫面
     document.querySelector('.construction_cancel').addEventListener('click',cancelConstruction,false)
+
+    //忘記密碼
+    document.querySelector(`#forgot`).addEventListener('click',function(){
+        alert('那我也沒辦法')
+    },false)
+    //檢查帳密
+    login.addEventListener('click',checkForm,false)
 };
 window.addEventListener("load", init, false);

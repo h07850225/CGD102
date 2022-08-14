@@ -103,7 +103,7 @@ a{
     transform: translateX(30%) scale(0.95);
 }
 .left_pic.roll_in{
-    transform: translateX(30%) scale(0.95);
+    transform: translateX(-30%) scale(0.95);
 }
 .roll_in.active{
     opacity: 1;
@@ -259,15 +259,16 @@ a{
     color: #fff;
     font-size: 16px;
 }
-.footer img,.footer a ,.footer button{
+.footer img,.footer li ,.footer button{
     background-color: #efb51f;
     text-decoration: none;
     color: #fff;
     font-weight: 600;
     font-size: 16px;
 }
-.footer_column ul a:hover{
+.footer_column ul li:hover{
     transform: scale(1.1,1.1);
+    cursor: pointer;
     transition: .3s;
 }
 .footer_column{
@@ -496,7 +497,7 @@ a{
     .download_from_store{
         display: block;
     }
-    .download_from_store a{
+    .download_from_store button{
         display: block;
         text-align: center;
     }

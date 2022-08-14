@@ -22,8 +22,11 @@
 
 // window.addEventListener('scroll', checkSlide);
 
+//scroll圖片出現
+
 window.addEventListener('scroll',function(){
     console.log(document.documentElement.scrollTop)
+    document.querySelector('.first_sight_pic').classList.add('active')
     let width = window.innerWidth;
     if(width <= 767 ){
         if(document.documentElement.scrollTop>100){
