@@ -81,7 +81,7 @@ function init(){
 
     //忘記密碼
     document.querySelector(`#forgot`).addEventListener('click',function(){
-        alert('那我也沒辦法')
+        alert('好啦偷偷告訴你，帳號abcd、密碼1234；先說好，功能還沒完工喔...噴小力一點...')
     },false)
     //檢查帳密
     login.addEventListener('click',checkForm,false)
