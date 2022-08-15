@@ -35,32 +35,46 @@ function init(){
     
 
     // show施工畫面
+    
+        // 登入畫面(右上角按鈕)
     let login_by = document.querySelectorAll(`.login_by`).length;
     for(let i = 0 ; i < login_by; i++){
         document.querySelectorAll(`.login_by`)[i].addEventListener('click',showConstruction,false);
     }
+        // 購買按鈕
     let buy = document.querySelectorAll(`.buy`).length;
     for(let i = 0 ; i < buy; i++){
         document.querySelectorAll(`.buy`)[i].addEventListener('click',showConstruction,false);
     }
+        // 脫單卡片
     let lost_single_card = document.querySelectorAll(`.lost_single_card`).length;
     for(let i = 0 ; i < lost_single_card; i++){
         document.querySelectorAll(`.lost_single_card`)[i].addEventListener('click',showConstruction,false);
     }
+        // 社群按鈕
     let community = document.querySelectorAll('.community button').length;
     for(let i = 0 ; i < community; i++){
         document.querySelectorAll(`.community button`)[i].addEventListener('click',showConstruction,false);
     }
+
+        // 下載按鈕
     let download_from_store = document.querySelectorAll('.download_from_store button').length;
     for(let i = 0 ; i < download_from_store; i++){
         document.querySelectorAll(`.download_from_store button`)[i].addEventListener('click',showConstruction,false);
     }
+        // footer清單
     let footer_column = document.querySelectorAll('.footer_column li').length;
     for(let i = 0 ; i < footer_column; i++){
         document.querySelectorAll(`.footer_column li`)[i].addEventListener('click',showConstruction,false);
     }
-    
+        // 交友攻略卡片
+    let raiders_card = document.querySelectorAll('.raiders_card ').length;
+    for(let i = 0 ; i < footer_column; i++){
+        document.querySelectorAll(`.raiders_card`)[i].addEventListener('click',showConstruction,false);
+    }
+        // 註冊(第一頁)
     document.querySelector('.register').addEventListener('click',showConstruction,false);
+        // 下載(第一頁)
     document.querySelector('.download').addEventListener('click',showConstruction,false);
     
 

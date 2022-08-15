@@ -461,6 +461,7 @@ h1{
     margin-bottom: 30px;
 }
 .raiders_card:hover{
+    cursor: pointer;
     transform: scale(1.1);
     transition: .3s;
 }
