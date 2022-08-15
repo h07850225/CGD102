@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理測驗</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/main1.css">
+    <link rel="stylesheet" href="./CSS/hearttest1.css">
+</head>
+<body>
+    <!-- 頁首 -->
+    <header class="main_header">
+        <input type="checkbox" id="menu_switch">
+        <!-- logo -->
+        <a href="https://h07850225.github.io/CGD102/index2.html" class="logo">
+            <img src="./pic/logo2.png" >
+        </a>
+        <!-- logo -->
+        <!-- 手機選單按鈕 -->
+        <label class="menu_button" for="menu_switch">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <!-- 手機選單按鈕 -->
+        <!-- 選單 -->
+        <nav class="main_nav">
+            <ul>
+                <a href="https://h07850225.github.io/CGD102/login.html"><li>交友聊天</li></a>
+                <a href="https://h07850225.github.io/CGD102/softwareinfo1.html"><li>軟體介紹</li></a>
+                <a href="https://h07850225.github.io/CGD102/raiders1.html"><li>交友攻略</li></a>
+                <a href="https://h07850225.github.io/CGD102/hearttest1.html"><li>心理測驗</li></a>
+                <a href="https://h07850225.github.io/CGD102/lostsingle1.html"><li>脫單見證</li></a>
+                <a href="https://h07850225.github.io/CGD102/store1.html"><li>夥伴商城</li></a>
+                <input type="button" class="login" value="登入" id="cellphone">
+            </ul>
+        </nav>
+        <!-- 選單 -->
+        <div class="login_wrapper">
+            <div class="name">
+                &nbsp;
+            </div>
+            <input type="button" class="login" value="登入" id="others">
+        </div>
+    </header>
+    <!-- 頁首 -->
+    <!-- 登入頁面 -->
+    <div class="login_section" id="login_section">
+        <!-- 登入頁面背景 -->
+        <div class="login_content">
+            <!-- 登入頁面區塊 -->
+            <div class="login_row" >
+                <div class="login_column" id="login_column">
+                    <!-- 頁面上半部 -->
+                    <div class="cancel">
+                        <button id="cancel">✖</button> 
+                    </div>
+                    <div class="login_block">
+                       <div class="login_by">
+                            <div class="login_by_pic">
+                                <img src="./pic/fb.png" alt="">
+                            </div>
+                            <p>連結臉書帳號登入</p>
+                        </div>
+                        <div class="login_by">
+                            <div class="login_by_pic">
+                                <img src="./pic/ig.png" alt="">
+                            </div>
+                            <p>連結IG帳號登入</p>
+                        </div>
+                        <div class="login_by">
+                            <div class="login_by_pic">
+                                <img src="./pic/twitter.png" alt="">
+                            </div>
+                            <p>連結推特帳號登入</p>
+                        </div>
+                        <a href="https://h07850225.github.io/CGD102/login.html"><div class="login_now">
+                            <p>已經有帳號了？<span>馬上登入</span></p>
+                        </div></a>
+                    </div>
+                    <!-- 頁面上半部 -->
+                    <!-- 頁面下半部 -->
+                    <div class="register_block">
+                        <div class="login_by">
+                            <div class="login_by_pic">
+                                <img src="./pic/cool (1).png" alt="">
+                            </div>
+                            <p>立即註冊</p>
+                        </div>
+                    </div>
+                    <!-- 頁面下半部 -->
+                </div>
+            </div>
+            <!-- 登入頁面區塊 -->
+        </div>
+        <!-- 登入頁面背景 -->
+    </div>
+    <!-- 登入頁面 -->
+    <!-- 施工中 -->
+    <div class="construction_section">
+        <div class="construction_row">
+            <button class="construction_cancel">✖</button>
+            <div class="construction">
+                <div class="construction_pic">
+                    <img src="./pic/dog6.png" >
+                </div>
+                <p>施工中，希望有朝一日會完成</p>
+            </div>
+        </div>
+    </div>
+    <!-- 施工中 -->
+    <!-- 中間 -->
+    <div class="section">
+        <h1>心理測驗</h1>
+        <div class="content">
+            <div class="row">
+                <!-- 圖片 -->
+                <div class="pic_column">
+                    <div class="pic">
+                        <img src="./pic/dogbook.png" alt="">
+                    </div>
+                </div>
+                <!-- 圖片 -->
+                <!-- 文字 -->
+                <div class="column">
+                    <div class="question">
+                        <div class="text">
+                            <h2>
+                                第一題
+                            </h2>
+                            <h3>
+                                你單身多久了？
+                            </h3>
+                            <p><input type="radio" name="answer" value="1">剛分手</p>
+                            <p><input type="radio" name="answer" value="2">一陣子</p>
+                            <p><input type="radio" name="answer" value="3">很久了</p>
+                            <p><input type="radio" name="answer" value="4">我是母胎單身QQ</p>
+                        </div>
+                        <div class="button">
+                            <div class="next">
+                                下一題→
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="text">
+                            <h2>
+                                第二題
+                            </h2>
+                            <h3>
+                                通常下班回家的消遣都在做什麼？
+                            </h3>
+                            <p><input type="radio" name="answer" value="5">滑手機、打電動</p>
+                            <p><input type="radio" name="answer" value="6">睡覺</p>
+                            <p><input type="radio" name="answer" value="7">運動</p>
+                            <p><input type="radio" name="answer" value="8">進修</p>
+                        </div>
+                        <div class="button">
+                            <div class="back">
+                                ←上一題
+                            </div>
+                            <div class="next">
+                                下一題→
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="text">
+                            <h2>
+                                第三題
+                            </h2>
+                            <h3>
+                                你對於脫單的渴望程度？
+                            </h3>
+                            <p><input type="radio" name="answer" value="9">超想</p>
+                            <p><input type="radio" name="answer" value="10">還好，隨緣</p>
+                            <p><input type="radio" name="answer" value="11">現在還不想進入一段戀情</p>
+                            <p><input type="radio" name="answer" value="12">我媽媽說還不能跟人談戀愛</p>
+                        </div>
+                        <div class="button">
+                            <div class="back">
+                                ←上一題
+                            </div>
+                            <div class="next">
+                                下一題→
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <div class="text">
+                            <h2>
+                                第四題
+                            </h2>
+                            <h3>
+                                出門之前都花多久時間打扮？
+                            </h3>
+                            <p><input type="radio" name="answer" value="13">30分鐘以上</p>
+                            <p><input type="radio" name="answer" value="14">10~30分鐘</p>
+                            <p><input type="radio" name="answer" value="15">5分鐘以內</p>
+                        </div>
+                        <div class="button">
+                            <div class="back">
+                                ←上一題
+                            </div>
+                            <div class="next">
+                                看結果
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 文字 -->
+            </div>
+        </div>
+        <div class="bone">
+            <img src="./pic/bone.png" alt="">
+        </div>
+        <div class="dog-paw1">
+            <img src="./pic/dogpaw.png" alt="">
+        </div>
+        <div class="dog-paw2">
+            <img src="./pic/dogpaw.png" alt="">
+        </div>
+    </div>
+    <!-- 中間 -->
+    <!-- 結果 -->
+    <div class="end_section">
+        <div class="end_row">
+            <button class="end_cancel">✖</button>
+            <div class="end">
+                <div class="end_pic">
+                    <img src="./pic/dog3.png" >
+                </div>
+                <div class="end_text">
+                    <h3>根據柴柴精密的分析</h3>
+                    <div class="appropriate">
+                        宜：
+                        <!-- <span>安安</span> -->
+                    </div>
+                    <div class="inappropriate">
+                        忌：
+                        <!-- <span>安安</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 結果 -->
+    <!-- 頁尾 -->
+    <div class="footer">
+        <div class="footer_row">
+            <!-- 頁尾上半 -->
+            <div class="footer_column">
+                <!-- 下載鈕 -->
+                <div class="download_from_store">
+                    <button>
+                        <img src="./pic/apple.png">
+                    </button>
+                    <button>
+                        <img src="./pic/google.png">
+                    </button>
+                </div>
+                <!-- 下載鈕 -->
+                <!-- 社群 -->
+                <div class="community">
+                    <button>
+                        <img src="./pic/ig.png">
+                    </button>
+                    <button>
+                        <img src="./pic/fb.png">
+                    </button>
+                    <button>
+                        <img src="./pic/twitter.png">
+                    </button>
+                </div>
+                <!-- 社群 -->
+            </div>
+            <!-- 頁尾上半 -->
+            <!-- 頁尾下半 -->
+            <div class="footer_column">
+                <ul>
+                    <li>聯絡我們</li>
+                    <li>常見問題</li>
+                    <li>使用者條款</li>
+                    <li>隱私權政策</li>
+                </ul>
+                <p>此網站僅為學習建構網站之作業用途，並無實際運營或商業之行為。 </p>
+                <p class="for_cellphone">此網站僅為學習建構網站之作業用途，並無實際運營或商業之行為。 </p>
+            </div>
+            <!-- 頁尾下半 -->
+        </div>
+    </div>
+    <script src="./JavaScirpt/jquery-3.6.0.min.js"></script>
+    <script src="./JavaScirpt/login_raiders.js"></script>
+    <script src="./JavaScirpt/heart_test.js"></script>
+</body>
+</html>
