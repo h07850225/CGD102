@@ -1,0 +1,243 @@
+.header-list a:nth-child(3){
+    border-bottom: #fff 3px solid;
+}
+.section{
+    padding: 110px 15px;
+    overflow: hidden;
+}
+.content{
+    position: relative;
+}
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+.column{
+    padding:0 15px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #E57B19;
+    letter-spacing: 35px;
+    margin-bottom: 30px;
+}
+
+/* 類型 */
+.column ul{
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.column li{
+    padding:0 20px;
+    color: #E57B19;
+}
+.column li:hover{
+    transform: scale(1.1,1.1);
+    transition: .3s;
+    color: #975110;
+    cursor: pointer;
+}
+/* 文章區 */
+.card{
+    display: flex;
+    min-height: 400px;
+    max-width: 1200px;
+    box-shadow: 0px 2px 2px 2px #ccc;
+    margin-bottom: 40px;
+    border-radius: 30px;
+}
+.column .card:hover{
+    cursor: pointer;
+}
+/* 圖片 */
+.card-pic{
+    width: 40%;
+    max-width: 400px;
+}
+.card-pic.cell_phone{
+    display: none;
+}
+.card-pic img{
+    width: 100%;
+
+}
+/* 文字 */
+.text{
+    height: 100%;
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.7;
+}
+.text h2{
+    font-size: 30px;
+    color: rgb(199, 152, 30);
+    margin-bottom: 14px;
+}
+.text p{
+    font-size: 22px;
+}
+.text p:nth-child(2){
+    font-size: 25px;
+    color: #BA2727E0;
+    margin-bottom: 14px;
+}
+.column a,.column a:visited, .column a:link{
+    text-decoration: none;
+    color: #827F7F;
+}
+/* 狗掌 */
+.dogpaw1{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -5%;
+    left: 10%;
+    transform: rotate(-35deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dogpaw1 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dogpaw2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 15%;
+    right:10%;
+    transform: rotate(35deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dogpaw2 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dogpaw3{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: -5%;
+    left: 40%;
+    transform: rotate(160deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dogpaw3 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+/* 桌機 */
+@media screen and (max-width:1199px) {
+    
+    
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+
+}
+
+/* 手機 */
+@media screen and (max-width:767px) {
+    .section{
+        padding: 20px 5px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .column{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .column li{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .card{
+        width: 100%;
+        margin: 5px;
+        flex-direction: column;
+    }
+    .card-pic.cell_phone{
+        display: block;
+    }
+    .card-pic.pc{
+        display: none;
+    }
+        /* 文字 */
+    .text{
+        height: 100%;
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+    .text h2{
+        font-size: 20px;
+        color: rgb(199, 152, 30);
+        margin-bottom: 14px;
+    }
+    .text p{
+        color: #827F7F;
+        font-size: 14px;
+        padding: 10px 0 0 0 ;
+        overflow: hidden;
+    }
+    .text p:nth-child(2){
+        font-size: 16px;
+        color: #BA2727E0;
+        margin-bottom: 14px;
+    }
+    .column a,.column a:visited, .column a:link{
+        text-decoration: none;
+        color: #827F7F;
+    }
+    /* 狗掌 */
+    .dogpaw1{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -5%;
+        left: 10%;
+        transform: rotate(-35deg);
+        opacity: .2;
+        z-index: -1;
+    }
+    .dogpaw1 img{
+        width: 100%;
+        filter:grayscale(1);
+    }
+    .dogpaw2{
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        top: 15%;
+        right:10%;
+        transform: rotate(35deg);
+        opacity: .2;
+        z-index: -1;
+    }
+    .dogpaw2 img{
+        width: 100%;
+        filter:grayscale(1);
+    }
+    .dogpaw3{
+        width: 350px;
+        height: 350px;
+        position: absolute;
+        bottom: -5%;
+        left: 40%;
+        transform: rotate(160deg);
+        opacity: .2;
+        z-index: -1;
+    }
+    .dogpaw3 img{
+        width: 100%;
+        filter:grayscale(1);
+    }
+}

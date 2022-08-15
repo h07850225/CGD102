@@ -21,18 +21,19 @@ h1{
     width: 100%;
     padding: 60px 0 50px;
     position: relative;
+    overflow: hidden;
 }
 .content{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(45deg, #ffffff 20%,#F5D686 100% );
-    opacity: .9;
 }
 .row{
     max-width: 1200px;;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .column{
     width: 40%;
@@ -42,15 +43,32 @@ h1{
     align-items: center;
 }
 /* 圖片 */
+.view{
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    height: 600px;
+}
+.wrap{
+    display: flex;
+    width: 900px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
 .pic{
-    width: 50%;
+    width: 300px;
 }
 .pic img{
     width: 100%;
 }
 /* 介紹 */
 .info{
+    display: none;
     line-height: 1.7;
+}
+.info.show{
+    display: block;
 }
 .info p{
     margin: 20px 0;
@@ -58,8 +76,7 @@ h1{
 }
 .info p:first-child{
     font-size: 22px;
-    color:#693F0EC4;
-    text-align: center;
+    color:#C7981E;
 }
 /* 主標 */
 h2{
@@ -68,7 +85,7 @@ h2{
 }
 .info p:nth-child(3){
     font-size: 20px;
-    color:#4F483BE8;
+    color:#827F7F;
     margin-bottom: 40px;
 }
 .info p:nth-child(4){
@@ -89,7 +106,7 @@ h2{
     border-radius: 50%;
     background-color: #000;
 }
-#b1{
+.button.clicked{
     background-color: #e8c55c;
 }
 /* 狗掌 */
@@ -97,7 +114,7 @@ h2{
     position: absolute;
     top: 20%;
     left: 0%;
-    /* z-index: -1; */
+    z-index: -1;
     opacity: .15;
     filter: grayscale(1);
     transform: rotate(20deg);
@@ -113,7 +130,7 @@ h2{
     position: absolute;
     top: 0;
     right: 5%;
-    /* z-index: -1; */
+    z-index: -1;
     opacity: .15;
     filter: grayscale(1);
     transform: rotate(-20deg);
@@ -126,7 +143,7 @@ h2{
     position: absolute;
     bottom: 0%;
     right: 40%;
-    /* z-index: -1; */
+    z-index: -1;
     opacity: .15;
     filter: grayscale(1);
     width: 350px;
@@ -136,3 +153,96 @@ h2{
     width: 100%;
 }
 /* 頁尾 */
+
+
+/* 桌機 */
+@media screen and (max-width:1199px) {
+    
+    
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+    
+}
+
+/* 手機 */
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 25px;
+    }
+    .column{
+        width: 45%;
+        height: calc(80vh - 250px);
+    }
+    .view{
+        width: 140px;
+        height: 300px;
+    }
+    .wrap{
+        display: flex;
+        width: 420px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .pic{
+        width: 140px;
+    }
+    .pic img{
+        width: 100%;
+    }
+    .info{
+        line-height: 1.3;
+    }
+    .info p{
+        margin: 10px 0;
+        text-align: left;
+    }
+    .info p:first-child{
+        font-size: 15px;
+        color:#C7981E;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .info p:nth-child(3){
+        font-size: 12px;
+        color:#827F7F;
+    }
+    .info p:nth-child(4){
+        font-size: 12px;
+        color:#adacace8;
+    }
+    .switch{
+        width: 70%;
+    }
+    .dog-paw1{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+        z-index: -1;
+        opacity: .15;
+        filter: grayscale(1);
+        transform: rotate(20deg);
+        width: 35%;
+    }
+    .dog-paw2{
+        width: 40%;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        z-index: -1;
+        opacity: .15;
+        filter: grayscale(1);
+        transform: rotate(-20deg);   
+    }
+    .dog-paw3{
+        position: absolute;
+        bottom: 0%;
+        right: 40%;
+        z-index: -1;
+        opacity: .15;
+        filter: grayscale(1);
+        width: 30%;
+    }
+}

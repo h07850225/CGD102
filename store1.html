@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登入頁面</title>
+    <title>夥伴商城</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/main1.css">
-    <link rel="stylesheet" href="./CSS/loginpage.css">
+    <link rel="stylesheet" href="./CSS/store1.css">
 </head>
 <body>
+    <!-- 頁首 -->
     <header class="main_header">
         <input type="checkbox" id="menu_switch">
         <!-- logo -->
@@ -44,6 +45,7 @@
             <input type="button" class="login" value="登入" id="others">
         </div>
     </header>
+    <!-- 頁首 -->
     <!-- 登入頁面 -->
     <div class="login_section" id="login_section">
         <!-- 登入頁面背景 -->
@@ -109,29 +111,119 @@
         </div>
     </div>
     <!-- 施工中 -->
-    <!-- 主內容 -->
-    <main>
-        <section class="section">
-            <div class="row">
-                <div class="column">
-                    <h1>
-                        登入
-                    </h1>
-                    <form id="form" action="https://h07850225.github.io/CGD102/chatroom.html">
-                        <input type="text" name="id" id="id" placeholder="請輸入帳號" maxlength="20">
-                        <input type="password" name="password" id="password" placeholder="請輸入密碼">    
-                        <input type="button" id="login" value="登入" class="button">
-                    </form>
-                    <button>沒有帳號？馬上註冊一個！</button>
-                    <button id="forgot">忘記密碼？</button>
-                </div>
-                <div class="column dog">
-                    <img src="./pic/dog8.png">
+    <!-- 中間 -->
+    <div class="section">
+        <h1>夥伴商城</h1>
+            <!-- 上半部 -->
+        <div class="shop_info_row">
+            <div class="shop_info_column">
+                <p>
+                    有沒有考慮給自己的夥伴買些罐罐啊？會讓你的交友事半功倍喔！
+                </p>
+                <button class="buy">馬上儲值</button>
+            </div>
+        </div>
+        <!-- 商城介紹 -->
+        <!-- 商品卡片 -->
+        <div class="shop_product_row">
+            <div class="shop_product_column">
+                <div class="product_card">
+                    <div class="product_pic">
+                        <img src="./pic/goldbone.png">
+                    </div>
+                    <div class="product_info">
+                        <h3>商品名稱：黃金骨頭(30天)</h3>
+                        <p>
+                            功能：夥伴獲得技能「火眼金睛」(可以看清晰照片)
+                            <span>夥伴獲得技能「洞察先機」(可知道對方給你的分數)</span>
+                            <span>夥伴獲得技能「精力充沛」(每天配對次數增加)</span>
+                            <span>夥伴獲得技能「能言善道」(給予五分不扣體力)</span>
+                        </p>
+                        <p class="price">
+                            價格：NT 500元
+                        </p>
+                    </div>
+                    <button class="buy">
+                        購買
+                    </button>
                 </div>
             </div>
-        </section>
-    </main>
-    <!-- 主內容 -->
+            <div class="shop_product_column">
+                <div class="product_card">
+                    <div class="product_pic">
+                        <img src="./pic/can.png">
+                    </div>
+                    <div class="product_info">
+                        <h3>商品名稱：超級罐罐</h3>
+                        <p>
+                            功能：夥伴獲得1點體力
+                            <span>(體力可以讓你的夥伴多找10個人或是給人五分，要在茫茫人海中找到你命中注定的人可不容易，多找幾個人多一點機會)</span>
+                        </p>
+                        <p class="price">
+                            價格：NT 500元
+                        </p>
+                    </div>
+                    <button class="buy">
+                        購買
+                    </button>
+                </div>
+            </div>
+            <div class="shop_product_column">
+                <div class="product_card">
+                    <div class="product_pic">
+                        <img src="./pic/ball.png">
+                    </div>
+                    <div class="product_info">
+                        <h3>商品名稱：水晶球(7天)</h3>
+                        <p>
+                            功能：可以看對方給你的評分
+                            <span>(是不是很好奇自己在別人心中的分數呢？害怕自己打的分數太低，錯過了其他人嗎？趕快買個水晶球看看吧！)</span>
+                        </p>
+                        <p class="price">
+                            價格：NT 150元
+                        </p>
+                    </div>
+                    <button class="buy">
+                        購買
+                    </button>
+                </div>
+            </div>
+            <div class="shop_product_column">
+                <div class="product_card">
+                    <div class="product_pic">
+                        <img src="./pic/magnifier.png">
+                    </div>
+                    <div class="product_info">
+                        <h3>商品名稱：放大鏡</h3>
+                        <p>
+                            功能：讓對方照片變得更清晰
+                            <span>
+                                (等不及看到對方長什麼樣子了嗎？默契大考驗一直答錯都拿不到放大鏡？那就課金吧！用一杯綠茶的錢滿足你的好奇心喔～)
+                            </span>
+                        </p>
+                        <p class="price">
+                            價格：NT 20元
+                        </p>
+                    </div>
+                    <button class="buy">
+                        購買
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 商店狗掌 -->
+        <div class="shop-dog-paw1">
+            <img src="./pic/dogpaw.png" alt="">
+        </div>
+        <div class="shop-dog-paw2">
+            <img src="./pic/dogpaw.png" alt="">
+        </div>
+        <div class="shop-dog-paw4">
+            <img src="./pic/dogpaw.png" alt="">
+        </div>
+        <!-- 商店狗掌 -->
+    </div>
+        <!-- 中間 -->
     <!-- 頁尾 -->
     <div class="footer">
         <div class="footer_row">
@@ -164,7 +256,6 @@
             <!-- 頁尾上半 -->
             <!-- 頁尾下半 -->
             <div class="footer_column">
-                
                 <ul>
                     <li>聯絡我們</li>
                     <li>常見問題</li>
@@ -177,6 +268,8 @@
             <!-- 頁尾下半 -->
         </div>
     </div>
-    <script src="./JavaScirpt/loginpage.js"></script>
+    <script src="./JavaScirpt/jquery-3.6.0.min.js"></script>
+    <script src="./JavaScirpt/login_raiders.js"></script>
+    <scripts ></scripts>
 </body>
 </html>

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登入頁面</title>
+    <title>交友攻略</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/main1.css">
-    <link rel="stylesheet" href="./CSS/loginpage.css">
+    <link rel="stylesheet" href="./CSS/raiders1.css">
 </head>
 <body>
+    <!-- 頁首 -->
     <header class="main_header">
         <input type="checkbox" id="menu_switch">
         <!-- logo -->
@@ -44,6 +45,7 @@
             <input type="button" class="login" value="登入" id="others">
         </div>
     </header>
+    <!-- 頁首 -->
     <!-- 登入頁面 -->
     <div class="login_section" id="login_section">
         <!-- 登入頁面背景 -->
@@ -109,29 +111,100 @@
         </div>
     </div>
     <!-- 施工中 -->
-    <!-- 主內容 -->
-    <main>
-        <section class="section">
+    <!-- 中間 -->
+    <div class="section">
+        <h1>交友攻略</h1>
+        <div class="content">
             <div class="row">
+                <!-- 類型 -->
                 <div class="column">
-                    <h1>
-                        登入
-                    </h1>
-                    <form id="form" action="https://h07850225.github.io/CGD102/chatroom.html">
-                        <input type="text" name="id" id="id" placeholder="請輸入帳號" maxlength="20">
-                        <input type="password" name="password" id="password" placeholder="請輸入密碼">    
-                        <input type="button" id="login" value="登入" class="button">
-                    </form>
-                    <button>沒有帳號？馬上註冊一個！</button>
-                    <button id="forgot">忘記密碼？</button>
+                    <ul>
+                        <li>自我介紹</li>
+                        <li>開話題</li>
+                        <li>聊天技巧</li>
+                        <li>約會技巧</li>
+                    </ul>
                 </div>
-                <div class="column dog">
-                    <img src="./pic/dog8.png">
+                <!-- 類型 -->
+                <!-- 文章區 -->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-pic">
+                            <img src="./pic/dogquetion.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                自介該怎麼寫！？
+                            </h2>
+                            <p>
+                                自我介紹，就是你交友的面試履歷！
+                            </p>
+                            <p>
+                                交友軟體的配對，其實跟求職面試很像。在只有幾分鐘甚至數十秒的時間內，要讓一個陌生人對你感到興趣，而且失敗可能就再也沒機會了。<br>
+                                你說自我介紹重不重要？<br>
+                                就讓柴柴教練教你怎麼寫出好的自介吧！
+                            </p>                       
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="text">
+                            <div class="card-pic cell_phone">
+                                <img src="./pic/dog5.png" alt="">
+                            </div>
+                            <h2>
+                                大頭貼NG懶人包！看完這篇秒懂合格交友大頭貼怎麼放
+                            </h2>
+                            <p>
+                                放上合格的大頭貼，是用交友軟體的基本誠意
+                            </p>
+                            <p>
+                                你是否很困惑，照片明明看起來遵守柴柴的七大合格原則，仍無法通過照片審核呢?
+                                <br>
+                                別擔心，以下我們將用的常見NG以及正確範例，幫助你換上合格的交友大頭貼，繼續你的交友之路～
+                            </p>
+                        </div>
+                        <div class="card-pic pc" >
+                            <img src="./pic/dog5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-pic">
+                            <img src="./pic/dog4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>
+                                女用戶現身說法：「這樣的人我絕對不會配對！」
+                            </h2>
+                            <p>
+                                總是配不到人的你，是不是中槍了呢？
+                            </p>
+                            <p>
+                                針對我們的女性用戶進行抽樣調查，統計出以下最無法被接受的三種人：<br>
+                                一・照片不吸引人
+                                <br>
+                                二・自介有寫等於沒寫
+                                <br>
+                                三・直接露骨表明找女友意圖
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <!-- 文章區 -->
             </div>
-        </section>
-    </main>
-    <!-- 主內容 -->
+            <!-- 狗掌 -->
+            <div class="dogpaw1">
+                <img src="./pic/dogpaw.png" alt="">
+            </div>
+            <div class="dogpaw2">
+                <img src="./pic/dogpaw.png" alt="">
+            </div>
+            <div class="dogpaw3">
+                <img src="./pic/dogpaw.png" alt="">
+            </div>
+            <!-- 狗掌 -->
+        </div>
+    </div>
+    <!-- 中間 -->
     <!-- 頁尾 -->
     <div class="footer">
         <div class="footer_row">
@@ -164,7 +237,6 @@
             <!-- 頁尾上半 -->
             <!-- 頁尾下半 -->
             <div class="footer_column">
-                
                 <ul>
                     <li>聯絡我們</li>
                     <li>常見問題</li>
@@ -177,6 +249,7 @@
             <!-- 頁尾下半 -->
         </div>
     </div>
-    <script src="./JavaScirpt/loginpage.js"></script>
+    <script src="./JavaScirpt/jquery-3.6.0.min.js"></script>
+    <script src="./JavaScirpt/login_raiders.js"></script>
 </body>
 </html>

@@ -1,0 +1,289 @@
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #E57B19;
+    letter-spacing: 35px;
+    margin-bottom: 30px;
+}
+.section{
+    padding: 110px 15px 60px 0;
+    overflow: hidden;
+}
+.header-list a:nth-child(6){
+    border-bottom: #fff 3px solid;
+}
+/* 儲值區塊 */
+.shop_info_row{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+.shop_info_column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.shop_info_column p{
+    font-size: 25px;
+    color: #AF0303D6;
+    line-height: 1.25;
+    flex-grow: 1;
+}
+.shop_info_column button{
+    background-color: #efb51f;
+    border: none;
+    border-radius: 60px;
+}
+.shop_info_column button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.shop_info_column button{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.shop_pic_column{
+    width: 40%;
+}
+.shop_pic img{
+    width: 100%;
+}
+/* 夥伴商城商品 */
+.shop_product_row{
+    max-width: 1200px;
+    margin: auto;
+}
+.shop_product_column{
+    margin: auto;
+    padding: 10px;
+}
+.product_card{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    padding:30px ;
+    background: linear-gradient(#FFD966C4,#FFD96692,#FFD96641);
+    opacity: .8;
+}
+.product_pic{
+    width: 30%;
+    background-color: #fff;
+}
+.product_pic img{
+    width: 100%;
+}
+.product_info{
+    width: 70%;
+    padding: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    color: #827F7F;
+    line-height: 1.25;
+}
+.product_info h3{
+    margin-bottom: 10px;
+}
+.product_info p{
+    text-indent: -3em;
+    padding-left:3em ;
+}
+.product_info p span{
+    display: block;
+    text-indent: 0;
+    padding-left:0;
+}
+.product_info .price{
+    margin-top: 10px;
+}
+.shop_product_column button{
+    background: #efb51f;
+    color: #fff;
+    align-self: flex-end;
+    border: none;
+    border-radius: 60px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.shop_product_column button{
+    width: 100px;
+}
+.shop_product_column button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .3s;
+}
+/* 商店狗掌 */
+.shop-dog-paw1{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    right: 30%;
+    box-sizing: border-box;
+    z-index: -1;
+    transform: rotate(-15deg);
+    opacity: .2;
+}
+.shop-dog-paw1 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.shop-dog-paw2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 55%;
+    right: 15%;
+    box-sizing: border-box;
+    z-index: -1;
+    transform: rotate(35deg);
+    opacity: .2;
+}
+.shop-dog-paw2 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.shop-dog-paw3 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.shop-dog-paw4{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    box-sizing: border-box;
+    z-index: -1;
+    transform: rotate(-35deg);
+    opacity: .2;
+}
+.shop-dog-paw4 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+
+
+/* 桌機 */
+@media screen and (max-width:1199px) {
+    
+    
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+
+}
+
+/* 手機 */
+@media screen and (max-width:767px) {
+    
+    /* 夥伴商城 */
+    .shop_info_column{
+        display: flex;
+        flex-direction: column;
+    }
+    .shop_info_column p{
+        font-size: 20px;
+        color: #AF0303D6;
+        line-height: 1.25;
+        flex-grow: 1;
+        margin-bottom: 15px;
+        font-weight: 600;
+    }
+    .shop_info_column button{
+        align-self: flex-end;
+    }
+    .shop_info_column button{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    /* 夥伴商城卡片 */
+    .product_card{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px ;
+        background: linear-gradient(#FFD966C4,#FFD96692,#FFD96641);
+    }
+    .product_pic{
+        width: 80%;
+        max-width: 400px;
+    }
+    .product_pic img{
+        width: 100%;
+    }
+    .product_info{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #827F7F;
+        line-height: 1.25;
+    }
+    .product_info h3{
+        margin-bottom: 10px;
+    }
+    .product_info p{
+        text-indent: -3em;
+        padding-left:3em ;
+    }
+    .product_info p span{
+        display: block;
+        text-indent: 0;
+        padding-left:0;
+    }
+    .product_info .price{
+        margin-top: 10px;
+    }
+    .shop_product_column button{
+        font-size: 20px;
+    }
+    .shop_dog_paw1{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        width: 30%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw1 img{
+        width: 100%;
+    }
+    .shop_dog_paw2{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        width: 50%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(-215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw2 img{
+        width: 100%;
+    }
+    .shop_dog_paw3{
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        width: 40%;
+        opacity: 0.2;
+        filter:grayscale(1);
+        z-index: -1;
+        transform: rotate(215deg);
+        overflow: hidden;
+    }
+    .shop_dog_paw3 img{
+        width: 100%;
+    }
+}

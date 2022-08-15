@@ -23,11 +23,10 @@ nav{
 }
 /* 商標 */
 .logo{
-    width: 50px;
     height: 50px;
 }
 .logo img{
-    width: 100%;
+    height: 100%;
 }
 /* 主功能選單 */
 nav ul{
@@ -43,10 +42,7 @@ nav li{
     padding: 8px 16px;
 }
 nav li:hover{
-    transform: scale(1.1,1.1);
     transition: .3s;
-    background-color: #efb41f;
-    color: rgb(162, 162, 162);
     border-bottom: 3px #fff solid;
     cursor: pointer;
 }
@@ -57,6 +53,65 @@ nav li:hover{
 }
 .setting img{
     width: 100%;
+}
+.setting:hover{
+    cursor: pointer;
+}
+/* 施工中 */
+.construction_section{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color:rgba(66,66,66,.8);
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.construction_row{
+    margin:auto;
+    width: 80%;
+    height: 55%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.construction_cancel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #efb41f;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+}
+.construction_cancel:hover{
+    cursor: pointer;
+}
+.construction{
+    display: flex;
+    align-items: center;
+}
+.construction_pic{
+    width: 40%;
+}
+.construction_pic img{
+    width: 100%;
+}
+.construction p{
+    width: 50%;
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
 }
 /* 主體 */
 .section{
@@ -96,6 +151,9 @@ nav li:hover{
     display: flex;
     padding: 15px;
     border-bottom:1px #ccc solid ;
+}
+.card:hover{
+    cursor: pointer;
 }
 .card-pic{
     border-radius: 50%;

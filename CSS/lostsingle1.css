@@ -1,0 +1,333 @@
+.section{
+    overflow: hidden;
+}
+.header-list a:nth-child(5){
+    border-bottom: #fff 3px solid;
+}
+.content{
+    margin-top:60px ;
+    position: relative;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #E57B19;
+    letter-spacing: 35px;
+}
+/* 卡片 */
+.row{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* 脫單卡片 */
+.lost_single_column{
+    width: 30%;
+    padding: 10px;
+}
+.lost_single_card{
+    height: 100%;    
+    border-radius: 30px;
+    height: 33  0px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;   
+    background-color: rgba(255,255,255,.7);
+}
+.lost_single_card:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+/* 脫單卡片圖片 */
+.lost_single_pic{
+    vertical-align: top;
+    /* margin-bottom:10px ; */
+    border-radius: 30px 30px  0 0;
+    overflow: hidden;
+}
+.lost_single_pic img{
+    width: 100%;
+}
+/* 脫單卡片文字 */
+.lost_single_text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    flex-grow: 1 ;
+}
+.lost_single_text h3{
+    color: #C7981E;
+    font-size: 25px;
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.lost_single_text p{
+    color: #827F7F;
+    font-size: 20px;
+    line-height: 1.25;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.lost_single_card .writer_name{
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.lost_single_card .writer_name_cellphone{
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: none;
+}
+/* 撰寫者 */
+.writer{
+    display: flex;
+    align-items: center;
+}
+.writer_pic{
+    width: 50px;
+    height: 50px;
+}
+.writer_pic img{
+    width: 100%;
+    border-radius: 50%;
+}
+.writer_name{
+    color: #888888;
+    line-height: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+}
+/* 表單 */
+.row:nth-child(3){
+    justify-content: flex-end;
+}
+.menu ul{
+    display: flex;   
+}
+.menu li{
+    padding: 20px;
+    color: #E57B19;
+}
+.menu li:nth-child(2){
+    background-color: rgb(255, 217, 177);
+}
+.menu li:hover{
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+    transition: .3s;
+    background-color: rgb(255, 222, 121);
+}
+/* 狗掌 */
+.dog-paw1{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: rotate(160deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dog-paw1 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dog-paw2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: rotate(60deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dog-paw2 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dog-paw3{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: rotate(-30deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dog-paw3 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dog-paw4{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: rotate(20deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dog-paw4 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dog-paw5{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    transform: rotate(-10deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dog-paw5 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+.dog-paw6{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    transform: rotate(110deg);
+    opacity: .2;
+    z-index: -1;
+}
+.dog-paw6 img{
+    width: 100%;
+    filter:grayscale(1);
+}
+/* 桌機 */
+@media screen and (max-width:1199px) {
+    
+    
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+
+}
+
+/* 手機 */
+@media screen and (max-width:767px) {
+    h1{
+        font-size: 25px;
+        font-weight: 600;
+        color: #E57B19;
+        letter-spacing: 35px;
+    }
+    /* 卡片 */
+    .row{
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* 撰寫者 */
+    .writer_pic{
+        display: none;
+    }
+    .writer_name{
+        display: none;
+    }
+    .writer_name_cellphone{
+        color: #888888;
+        font-size: 12px;
+        text-align: left;
+        line-height: 1.25;
+        display: block;
+        /* padding:  5px 15px; */
+    }
+    .writer_name_cellphone span{
+        display: block;
+    }
+    .heart_test_text p{
+        font-size: 16px;
+    }
+    /* 脫單見證 */
+    .lost_single_column{
+        width: 50%;
+    }
+    .lost_single_card{
+        height: 200px;
+    }
+    .lost_single_pic{
+        height: 30%;
+    }
+    .lost_single_text h3{
+        color: #C7981E;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .lost_single_text p{
+        padding: 10px 0 0 0;
+        color: #827F7F;
+        font-size: 14px;
+        line-height: 1.25;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .lost_single_card .writer_name_cellphone{
+        height: 30%;
+    }
+    /* 狗掌 */
+    .dog-paw1{
+        width: 35%;
+    }
+    .dog-paw2{
+        width: 40%;
+        right:50%;
+        height: auto;
+    }
+    .dog-paw3{
+        width: 40%;
+    }
+    .dog-paw4{
+        width: 35%;
+    }
+    .dog-paw5{
+        width: 45%;
+    }
+    .dog-paw6{
+        width: 30%;
+        right: 25%;
+    }
+}
