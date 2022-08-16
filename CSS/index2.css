@@ -1061,6 +1061,9 @@ h1{
 
 /* 手機以下 */
 @media screen and (max-width:767px){
+    .section{
+        margin-top: 50pxgit;
+    }
     .section h2{
         margin-bottom: 30px;
         font-size: 30px;
