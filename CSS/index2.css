@@ -1070,7 +1070,7 @@ h1{
 /* 手機以下 */
 @media screen and (max-width:767px){
     .section{
-        margin-top: 50pxgit;
+        margin-top: 50px;
     }
     .section h2{
         margin-bottom: 30px;

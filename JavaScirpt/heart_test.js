@@ -1,25 +1,4 @@
-// $(function(){
-//     $('.next').click(function(){
-//         index = $(this).index();
-//         console.log(index)
-        
-//         console.log(index)
-//         for(let i = 0 ; i <=5 ; i++){
-//             $(`.question:nth-child(${i})`).css({
-                
-//                 display : 'none'
-//             }).$(`.question:nth-child(${i})`){
-
-//             }
-//         }
-//         $(`.question:nth-child(${index+1})`).css({
-//             display : 'block'
-//         })
-//     })
-// })
-
 $(function(){
-   
     let index=0
     index=$(this).index()+2
     $(".next").click(function(){
@@ -30,8 +9,7 @@ $(function(){
         $(`.question:nth-child(${index})`).css({
             display:"block"
         }).siblings().hide()
-            
-        
+        console.log($('.answer').selectedIndex)
     })
 
     $(".back").click(function(){
@@ -41,6 +19,9 @@ $(function(){
             display:"block"
         }).siblings().hide()
     })
+
+    
+
 })
 
 
