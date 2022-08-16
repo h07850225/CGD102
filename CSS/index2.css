@@ -630,6 +630,7 @@ h1{
     background-color: rgba(255,255,255,.7);
 }
 .lost_single_card:hover{
+    cursor: pointer;
     transform: scale(1.1);
     transition: .3s;
 }
@@ -669,10 +670,6 @@ h1{
     line-height: 1.25;
     flex-grow: 1;
     overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
 }
 .lost_single_card .writer_name{
     margin: 10px;
@@ -997,10 +994,21 @@ h1{
         display: none;
     }
     .lost_single_card{
-        height: 280px;
+        height: 270px;
     }
     .lost_single_text h3{
         margin-bottom: 5px;
+    }
+    .lost_single_text p{
+        padding: 10px 0 0 0;
+        color: #827F7F;
+        font-size: 16px;
+        line-height: 1.25;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
     }
     .lost_single_heart{
         left: -20%;
@@ -1318,7 +1326,7 @@ h1{
     .lost_single_text p{
         padding: 10px 0 0 0;
         color: #827F7F;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 1.25;
         overflow: hidden;
         text-overflow: ellipsis;

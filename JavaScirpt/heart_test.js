@@ -1,17 +1,45 @@
+// $(function(){
+//     $('.next').click(function(){
+//         index = $(this).index();
+//         console.log(index)
+        
+//         console.log(index)
+//         for(let i = 0 ; i <=5 ; i++){
+//             $(`.question:nth-child(${i})`).css({
+                
+//                 display : 'none'
+//             }).$(`.question:nth-child(${i})`){
+
+//             }
+//         }
+//         $(`.question:nth-child(${index+1})`).css({
+//             display : 'block'
+//         })
+//     })
+// })
+
 $(function(){
-    $('.next').click(function(){
-        index = $(this).index();
-        console.log(index)
+   
+    let index=0
+    index=$(this).index()+2
+    $(".next").click(function(){
+     
         index++;
         console.log(index)
-        for(let i = 0 ; i <=4 ; i++){
-            $(`.question:nth-child(${i+1})`).css({
-                display : 'block'
-            })
-        }
-        $(`.question:nth-child(${index+1})`).css({
-            display : 'block'
-        })
+      
+        $(`.question:nth-child(${index})`).css({
+            display:"block"
+        }).siblings().hide()
+            
+        
+    })
+
+    $(".back").click(function(){
+        index--;
+       console.log(index)
+        $(`.question:nth-child(${index})`).css({
+            display:"block"
+        }).siblings().hide()
     })
 })
 

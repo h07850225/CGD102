@@ -9,7 +9,7 @@ h1{
     padding: 110px 15px 60px 0;
     overflow: hidden;
 }
-.header-list a:nth-child(6){
+.main_nav a:nth-child(6){
     border-bottom: #fff 3px solid;
 }
 /* 儲值區塊 */
