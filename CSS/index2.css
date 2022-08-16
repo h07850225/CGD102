@@ -1295,7 +1295,7 @@ h1{
         width: 50%;
     }
     .lost_single_card{
-        height: 200px;
+        height: 190px;
     }
     .lost_single_pic{
         height: 30%;
@@ -1365,6 +1365,9 @@ h1{
     }
     .shop_pic_column{
         margin: auto;
+    }
+    .shop_info_column button{
+        font-size: 20px;
     }
     /* 夥伴商城卡片 */
     .product_card{
