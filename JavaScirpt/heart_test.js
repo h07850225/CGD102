@@ -5,8 +5,8 @@ $(function(){
         index++;
         console.log(index)
         for(let i = 0 ; i <=4 ; i++){
-            $(`.question:nth-child(${i})`).css({
-                display : 'none'
+            $(`.question:nth-child(${i+1})`).css({
+                display : 'block'
             })
         }
         $(`.question:nth-child(${index+1})`).css({

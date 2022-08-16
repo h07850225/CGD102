@@ -1,4 +1,4 @@
-.header-list a:nth-child(4){
+.main_nav ul a:nth-child(4){
     border-bottom: #fff 3px solid;
 }
 .section{
@@ -189,4 +189,97 @@ h1{
 }
 .appropriate span,.inappropriate span{
     color: #827F7F;
+}
+
+
+/* 桌機 */
+@media screen and (max-width:1199px) {
+
+}
+/* 平板 */
+@media screen and (max-width:1023px) {
+
+}
+@media screen and (max-width:767px) {
+    .row{
+        display: block;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .content{
+        width: 100%;
+        background: none
+    }
+    
+    .pic_column{
+        width: 100%;
+    }
+    .column{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .question:not(:first-child){
+        display: none;
+    }
+    .pic img{
+        width: 100%;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h2{
+        font-size: 20px;
+        color: #BA2727E0;
+        margin-bottom: 20px;
+    }
+    .text h3{
+        font-size: 20px;
+        color: #827F7F;
+        margin-bottom: 20px;
+    }
+    .text p{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    /* 下一頁 */
+    .button{
+        font-size: 16px;        
+    }
+    /* 背景 */
+    .bone{
+        position: absolute;
+        top: 0%;
+        left: -50%;
+        background-color: #fff;
+        opacity: .1;
+        z-index: -1;
+        transform: rotate(-40deg);
+    }
+    .bone img{
+        width: 100%;
+    }
+    .dog-paw1{
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        right:10%;
+        background-color: #fff;
+        opacity: .15;
+        z-index: -1;
+        transform: rotate(20deg);
+        filter: grayscale(1);
+    }
+    .dog-paw1 img{
+        width: 100%;
+    }
+    .dog-paw2{
+        display: none;
+    }
 }
