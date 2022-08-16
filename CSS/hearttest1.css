@@ -133,6 +133,7 @@ h1{
 }
 .end_row{
     margin:auto;
+    margin-top: 100px;
     width: 80%;
     height: 80%;
     align-items: center;
@@ -222,7 +223,7 @@ h1{
         flex-direction: column;
         height: 350px;
         justify-content: space-evenly;
-        
+
     }
     
     .question:not(:first-child){

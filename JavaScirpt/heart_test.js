@@ -20,9 +20,26 @@ $(function(){
         }).siblings().hide()
     })
 
-    
+    $('.see_result').click(result)
+
+    function result(){
+        $('.end_section').css({
+            display:'block'
+        })
+
+        if($(".answer").val()=="1"){
+            $('.appropriate').find("p").text("大哭一場")
+        }
+    }
+    document.querySelector('.end_cancel').addEventListener('click',cancelEnd,false)
+
+    function cancelEnd(){
+        document.querySelector('.end_section').style.display ='none'
+    }
 
 })
+
+
 
 
 
