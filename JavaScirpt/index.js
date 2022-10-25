@@ -23,9 +23,10 @@
 // window.addEventListener('scroll', checkSlide);
 
 //scroll圖片出現
-window.addEventListener('load',function(){
+window.onload = function(){
     document.querySelector('.first_sight_pic').classList.add('active');
-})
+}
+
 
 
 
