@@ -23,10 +23,14 @@
 // window.addEventListener('scroll', checkSlide);
 
 //scroll圖片出現
+window.addEventListener('load',function(){
+    document.querySelector('.first_sight_pic').classList.add('active');
+})
+
+
 
 window.addEventListener('scroll',function(){
-    console.log(document.documentElement.scrollTop)
-    document.querySelector('.first_sight_pic').classList.add('active')
+    // console.log(document.documentElement.scrollTop)
     let width = window.innerWidth;
     if(width <= 767 ){
         if(document.documentElement.scrollTop>100){
@@ -94,6 +98,4 @@ window.addEventListener('scroll',function(){
             document.querySelector('.shop_pic').classList.remove('active')
         }
     }
-
-
 })
